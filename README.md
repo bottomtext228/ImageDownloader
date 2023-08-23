@@ -3,4 +3,6 @@ Browser extension that downloads all images that were opened via "Open Image in 
 
 ## Usage
 Open extensions menu and click on `Image Downloader` extension to download images. 
-[image1](./_/screenshot1.png)
+
+
+![Image](./_/screenshot1.png)
