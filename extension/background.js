@@ -6,7 +6,7 @@ function contentScript() {
         try {
             document.cookie; // if web page is sandboxed this will throw an exception
 
-            downloadURL(uwindow.location.href); // download by content script to save all page cookies
+            downloadURL(window.location.href); // download by content script to save all page cookies
         } catch (error) { // we can't download images via content script when page is sandboxed, 
             chrome.runtime.sendMessage('download-by-chrome-api'); // so we send signal to the background script
         }
